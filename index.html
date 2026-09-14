@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario | Entrenador de Tenis y Preparador Físico</title>
+    <style>
+        /* ==========================================
+           ESTILOS GENERALES (CSS)
+           ========================================== */
+        :root {
+            --primary-color: #1a365d;
+            --secondary-color: #2b6cb0;
+            --bg-light: #f7fafc;
+            --text-main: #2d3748;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-main);
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            color: #e2e8f0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 4rem 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        h2 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+            text-align: center;
+        }
+
+        /* ==========================================
+           GRID Y CONTENEDORES
+           ========================================== */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: var(--bg-light);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .media-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        /* ==========================================
+           IMÁGENES Y VÍDEO
+           ========================================== */
+        img, video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABECERA -->
+    <header>
+        <div class="container">
+            <h1>Mario</h1>
+            <p>Entrenador de Tenis (Nivel 1 FATenis) | Preparador Físico | Estudiante de Fisioterapia</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- SECCIÓN SOBRE MÍ -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy un profesional apasionado por el deporte, el rendimiento atlético y la biomecánica. Con titulación como Técnico Superior en Acondicionamiento Físico (TSAF) y especializado a través del Máster ENFAF, actualmente curso el Grado en Fisioterapia en la UCAM en Murcia. Combino el rigor científico con el trabajo de campo para ofrecer entrenamientos de tenis, asesorías online de fitness y preparación física orientada a resultados.</p>
+        </section>
+
+        <!-- SECCIÓN FORMACIÓN -->
+        <section id="formacion">
+            <h2>Formación Académica</h2>
+            <div class="grid-container">
+                
+                <div class="card">
+                    <h3>TSAF - Acondicionamiento Físico</h3>
+                    <p style="text-align: left; margin-bottom: 1rem; font-size: 1rem;">Graduación del ciclo formativo de grado superior.</p>
+                    <div class="media-grid">
+                        <img id="img-orla-tsaf" src="1000096217.jpg" alt="Graduación TSAF" loading="lazy" />
+                        <img src="1000096216.jpg" alt="Celebración Graduación TSAF" loading="lazy" />
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Máster ENFAF</h3>
+                    <p style="text-align: left; margin-bottom: 1rem; font-size: 1rem;">Especialización en entrenamiento, nutrición y salud.</p>
+                    <div class="media-grid">
+                        <img id="img-orla-master" src="1000106089.jpg" alt="Graduación Máster ENFAF" loading="lazy" />
+                        <img src="1000106130.jpg" alt="Entrega de beca Máster ENFAF" loading="lazy" />
+                        <img src="1000106134.jpg" alt="Compañeros Máster ENFAF" loading="lazy" />
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN EXPERIENCIA Y PISTA -->
+        <section id="experiencia">
+            <h2>Experiencia en Pista</h2>
+            <p>Desarrollo técnico y táctico en pista, incluyendo la etapa formativa en la prestigiosa academia JC Ferrero Equelite (Villena).</p>
+            
+            <div class="grid-container">
+                
+                <div class="card">
+                    <h3>JC Ferrero Equelite & Competición</h3>
+                    <div class="media-grid">
+                        <img id="img-ferrero-stage" src="1000097262.jpg" alt="Summer Stage JC Ferrero Equelite" loading="lazy" />
+                        <img src="1000082360.jpg" alt="Equipo de tenis" loading="lazy" />
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Entrenamiento de Alumnos</h3>
+                    <div class="media-grid">
+                        <img src="1000103039.png" alt="Grupo de entrenamiento en pista" loading="lazy" />
+                        <img src="1000096457.jpg" alt="Alumnos en pista de tenis" loading="lazy" />
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Metodología en Acción</h3>
+                    <div class="media-grid">
+                        <video id="vid-entrenamiento" controls preload="metadata">
+                            <source src="1000097995.mp4" type="video/mp4">
+                            Tu navegador no soporta la etiqueta de vídeo.
+                        </video>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mario - Preparación Física y Tenis. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
